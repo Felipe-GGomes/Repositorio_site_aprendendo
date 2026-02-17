@@ -274,21 +274,21 @@ a:hover {
   }
 }
 /* ==========================
-   CHUVA DE EMOJIS (cookies / patos)
+   CHUVA DE EMOJIS
    ========================== */
 
 .emoji-rain {
   position: fixed;
   inset: 0;
-  pointer-events: none;      /* não atrapalha clique no conteúdo */
+  pointer-events: none;  
   overflow: hidden;
-  z-index: 0;                /* fica atrás do conteúdo */
+  z-index: 0;               
 }
 
 /* cada emoji criado via JS */
 .emoji-rain span {
   position: absolute;
-  top: -10vh;                /* começa um pouco acima da tela */
+  top: -10vh;               
   font-size: 1.8rem;
   will-change: transform, opacity;
   animation-name: fall-emoji;
@@ -296,7 +296,7 @@ a:hover {
   animation-iteration-count: 1;
 }
 
-/* animação: cai de cima até depois do fim da tela */
+
 @keyframes fall-emoji {
   0% {
     transform: translateY(-10vh) rotate(0deg);
@@ -310,3 +310,65 @@ a:hover {
     opacity: 0;
   }
 }
+/* ==========================
+   CONTATO / FOOTER
+   ========================== */
+.contato {
+  max-width: 900px;
+  margin: 16px auto 80px;            /* espaço pra bottom-nav */
+  padding: 20px 24px;
+  background: #1a2533;               /* mesmo fundo das sections */
+  color: #fafcff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #0006;      /* igual às outras sections */
+}
+
+.contato h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #42aaff;  /* linha azul padrão */
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contato ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contato li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.contato li i {
+  color: #5ab4ff;
+  width: 18px;
+  text-align: center;
+}
+
+.contato li span {
+  font-weight: 600;
+}
+
+.contato a {
+  color: #9ecbff;
+}
+
+/* no mobile, centraliza um pouco mais */
+@media (max-width: 768px) {
+  .contato {
+    text-align: left;
+    padding: 18px 16px 20px;
+  }
+
+  .contato li {
+    flex-wrap: wrap;
+  }
+}
+
