@@ -2,192 +2,207 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felipe Gabriel Gomes - Portfólio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <button id="menu-toggle" class="menu-toggle-btn">
-        &#9776;
-    </button>
-    <header>
+    <div id="emoji-rain-container" class="emoji-rain"></div>
+    <header class="site-header">
         <h1>Felipe Gabriel Gomes</h1>
-        <p>Estudante de ADS (UTFPR) | Pesquisador em IC | Desenvolvedor</p>
+        <p>Desenvolvedor em formação · ADS (UTFPR) · Suporte Técnico na SAG</p>
     </header>
 
-    <div class="layout">
-        <nav class="menu-lateral">
-            <ul>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#linguagens">Linguagens</a></li>
-                <li><a href="#interesses">Interesses</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+    <main>
+        <!-- SOBRE MIM -->
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+
+            <div class="perfil-completo">
+                <img src="fotos/eucarro.jpeg" alt="Felipe Gabriel Gomes" class="foto-quemsou" />
+                <div class="texto-quemsou">
+                    <p>
+                        Olá! Sou Felipe Gabriel Gomes, estudante de Análise e
+                        Desenvolvimento de Sistemas na UTFPR e atuo como Suporte Técnico
+                        na SAG Software Agroindustriais.
+                    </p>
+                    <p>
+                        Tenho foco em desenvolvimento de software, principalmente em
+                        backend e aplicações web usando Python e SQL, agora aprendendo JavaScript. Gosto
+                        de entender como os sistemas funcionam por dentro e transformar
+                        regras de negócio em soluções bem estruturadas.
+                    </p>
+                    <p>
+                        Participei de projetos práticos, onde desenvolvi interfaces web. 
+                        Já ministrei oficinas de Python e cursos de Git/GitHub para colegas, o que reforçou meu
+                        interesse em compartilhar conhecimento e trabalhar em equipe.
+                    </p>
+                    <p>
+                        Busco oportunidades como desenvolvedor júnior para aplicar o que
+                        venho estudando e ganhar experiência em ambiente profissional
+                        real.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Informações chave</h3>
+            <ul class="topicos">
+                <li>
+                    Cursando Análise e Desenvolvimento de Sistemas na Universidade
+                    Tecnológica Federal do Paraná (UTFPR).
+                </li>
+                <li>
+                    Experiência com desenvolvimento de APIs, banco de dados e
+                    aplicações web em projetos acadêmicos e pessoais.
+                </li>
+                <li>
+                    Atuação como Suporte Técnico na SAG, com uso de SQL, análise de
+                    logs e contato com usuários.
+                </li>
+                <li>
+                    Valorizo o aprendizado contínuo e utilizo IA como apoio para
+                    estudar e prototipar soluções.
+                </li>
             </ul>
-        </nav>
-        <main>
-            <section id="sobre">
-                <h2>Sobre mim</h2>
 
-                <div class="perfil-completo">
-                    <img src="fotos/eucarro.jpeg" alt="Felipe Gabriel Gomes" class="foto-quemsou">
-                    <div class="texto-quemsou">
-                        <p>
-                            Olá! Sou Felipe Gabriel Gomes, estudante de Análise e Desenvolvimento de Sistemas na
-                            UTFPR.<br><br>
-                            Sempre fui curioso em entender como as coisas funcionam. Desde pequeno, gostava muito de
-                            jogos e ficava pensando, "Como faz isso?", "como funciona o site que eu abro no meu
-                            navegador?" e essa curiosidade se transformou em paixão pela tecnologia e pelo aprendizado
-                            constante.<br><br>
-                            Fora da universidade, busco me envolver em projetos práticos, explorar novas ferramentas e
-                            compartilhar conhecimento com outras pessoas.<br><br>
-                            Já ministrei oficinas de Python para iniciantes em minha cidade e atuei como instrutor em
-                            cursos de Git e GitHub para colegas da faculdade — experiências que reforçaram meu gosto por
-                            ensinar e colaborar.<br><br>
-                            Atualmente, integro a equipe da SAG Software Agroindustriais, aplicando meus conhecimentos
-                            em projetos reais e fortalecendo minha base técnica e profissional.<br><br>
-                            <strong>Obs:</strong> A foto com o carro representa minha paixão por automóveis e pela ideia
-                            de estar sempre em movimento — evoluindo e explorando novos caminhos.
-                        </p>
-                    </div>
-                </div>
-
-                <h3>Informações Chave</h3>
-                <ul class="topicos">
-                    <li>Cursando Análise e Desenvolvimento de Sistemas pela Universidade Tecnológica Federal do Paraná
-                        (UTFPR).</li>
-                    <li>Entusiasta da tecnologia, com experiência em diversas linguagens de programação e foco em
-                        diversidade.</li>
-                    <li>Atuação profissional como Suporte Técnico na SAG Software Agroindustriais, com vivência em
-                        ambientes corporativos e soluções voltadas ao setor agroindustrial.</li>
-                    <li>Valorizo o aprendizado contínuo e utilizo Inteligência Artificial como ferramenta para aprimorar
-                        estudos e projetos.</li>
+            <h3>Outras informações</h3>
+            <div class="idioma-lattes">
+                <h4><i class="fas fa-language"></i> Inglês</h4>
+                <ul class="proficiencia">
+                    <li>Compreensão auditiva: intermediário</li>
+                    <li>Comunicação oral: intermediário</li>
+                    <li>Leitura: intermediário</li>
+                    <li>Escrita: básico</li>
                 </ul>
 
-                <h3>Outras Informações</h3>
-                <div class="idioma-lattes">
-                    <h4><i class="fas fa-language"></i> Inglês</h4>
-                    <ul class="proficiencia">
-                        <li>Compreensão Auditiva (Ouvir): Nível Intermediário</li>
-                        <li>Comunicação Oral (Falar): Nível Intermediário</li>
-                        <li>Leitura: Nível Intermediario</li>
-                        <li>Escrita: Nível Básico</li>
-                    </ul>
+                <h4><i class="fas fa-graduation-cap"></i> Currículo Lattes (CNPq)</h4>
+                <p>Perfil acadêmico vinculado às atividades de Iniciação Científica.</p>
+                <a href="http://lattes.cnpq.br/2324353549819727" target="_blank" rel="noopener noreferrer">
+                    Acessar perfil
+                </a>
+            </div>
+        </section>
 
-                    <h4><i class="fas fa-graduation-cap"></i> Currículo Lattes (CNPq)</h4>
-                    <p>Aqui você pode visualizar meu perfil do Lattes, onde está vinculado à minha IC.</p>
-                    <a href="http://lattes.cnpq.br/2324353549819727" target="_blank" rel="noopener noreferrer">
-                        Acessar Perfil
-                    </a>
-                </div>
-            </section>
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2>Habilidades técnicas</h2>
 
-            <section id="linguagens">
-                <h2>Linguagens</h2>
-                <i class="fab fa-python" style="color: #3776ab;" title="Python (Favorito)"></i>
-                <i class="fas fa-database" style="color: #666;" title="SQL (Entusiasta)"></i>
-                <i class="fab fa-html5" style="color: #e34c26;" title="HTML5 (Aprendendo)"></i>
-                <i class="fab fa-css3-alt" style="color: #2965f1;" title="CSS3 (Aprendendo)"></i>
-                <i class="fab fa-js" style="color: #f0db4f;" title="JavaScript (Aprendendo)"></i>
-                <i class="fab fa-java" style="color: #f89820;" title="Java (Básico)"></i>
-                <i class="fab fa-c" style="color: #ffffff;" title="C (Intermediário)"></i>
-                <i class="fab fa-git" style="color: #f14e32;" title="Git (Versionamento)"></i>
-                <i class="fab fa-github" style="color: #ffffff;" title="GitHub (Repositórios)"></i>
-                <p>
-                    Estas são algumas das linguagens e ferramentas que venho aprendendo e aplicando em meus projetos.
-                    Cada uma representa novos desafios e oportunidades, e busco constantemente evoluir para desenvolver soluções
-                    cada vez mais eficientes e inovadoras.
-                </p>
-            </section>
+            <p><strong>Linguagens:</strong> Python, JavaScript, SQL, Java, C, PHP.</p>
+            <p>
+                <strong>Frameworks e bibliotecas:</strong> FastAPI, Laravel (em estudo).
+            </p>
+            <p><strong>Bancos de dados:</strong> PostgreSQL, MySQL, Oracle, SqlServer</p>
+            <p><strong>Ferramentas:</strong> Git, GitHub, VS Code, GitHub Pages.</p>
 
-            <section id="interesses">
-                <h2>Interesses</h2>
-                <p>Áreas da tecnologia que mais despertam meu interesse e nas quais pretendo me especializar.</p>
-                <ul class="topicos">
-                    <li><i class="fas fa-code"></i> Desenvolvimento no geral</li>
-                    <li><i class="fas fa-brain"></i> Inteligência Artificial</li>
-                    <li><i class="fas fa-database"></i> Bancos de Dados</li>
-                    <li><i class="fas fa-microchip"></i> Tecnologias Emergentes</li>
-                </ul>
-            </section>
+            <p>
+                Uso essas tecnologias em projetos pessoais e acadêmicos, com foco em
+                APIs REST, integração com banco de dados e desenvolvimento web
+                full stack em nível júnior.
+            </p>
 
-            <section id="projetos">
-                <h2>Projetos</h2>
-                <ul class="topicos">
-                    <li>
-                        <strong>Site Pessoal:</strong> projeto desenvolvido para praticar HTML, CSS e JavaScript,
-                        servindo como meu portfólio profissional.
-                    </li>
-                    <li><strong>Projeto Seletivo – OCCAN Engenharias:</strong> participei de um desafio em equipe para
-                        desenvolver um site front-end, aplicando metodologias ágeis, prototipagem e reuniões semanais.
-                    </li>
-                    <li><strong>Aulas de Python:</strong> ministrei oficinas gratuitas para iniciantes, abordando lógica
-                        de programação e fundamentos da linguagem.</li>
-                    <li><strong>Curso de Git e GitHub:</strong> atuei como instrutor, auxiliando colegas da faculdade na
-                        compreensão de fluxos de versionamento e colaboração.</li>
-                    <li><strong>Experiência Profissional – SAG Software Agroindustriais:</strong> aplico conhecimentos
-                        em projetos voltados ao setor agroindustrial, com foco em eficiência e inovação.</li>
-                    <li>
-                        <strong>Iniciação Científica – UTFPR:</strong> pesquisa atual sobre o uso da biblioteca NLTK em
-                        aplicações de Engenharia de Software, com foco em Processamento de Linguagem Natural.
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </div>
+            <div class="icones-linguagens">
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fas fa-database" title="SQL"></i>
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-java" title="Java"></i>
+                <i class="fa-solid fa-c" title="C"></i>
+                <i class="fab fa-git" title="Git"></i>
+                <i class="fab fa-github" title="GitHub"></i>
+            </div>
+        </section>
 
-    <footer>
-        <h3>Contato</h3>
-        <ul>
-            <li>Email: <a href="mailto:felipeggomes80@gmail.com">felipeggomes80@gmail.com</a></li>
-            <li>LinkedIn: <a
-                    href="https://www.linkedin.com/in/felipe-gabriel-gomes-9194b7283/?trk=opento_sprofile_topcard"
-                    target="_blank">Felipe Gabriel Gomes</a></li>
-            <li>GitHub: <a href="https://github.com/Felipe-GGomes" target="_blank">Felipe-GGomes</a></li>
-            <li>Currículo Lattes: <a href="http://lattes.cnpq.br/2324353549819727" target="_blank"
-                    rel="noopener noreferrer">Perfil CNPq</a></li>
-        </ul>
-    </footer>
+        <!-- INTERESSES -->
+        <section id="interesses">
+            <h2>Interesses</h2>
+            <p>
+                Áreas da tecnologia que mais me interessam e nas quais pretendo me
+                aprofundar.
+            </p>
+            <ul class="topicos">
+                <li><i class="fas fa-code"></i> Desenvolvimento backend e full stack</li>
+                <li><i class="fas fa-brain"></i> Inteligência Artificial e PLN</li>
+                <li><i class="fas fa-database"></i> Bancos de dados e dados</li>
+                <li>
+                    <i class="fas fa-microchip"></i> Boas práticas de engenharia de
+                    software
+                </li>
+            </ul>
+        </section>
 
-    <script>
-    const btn = document.getElementById('menu-toggle');
-    const menu = document.querySelector('.menu-lateral');
-    const sections = document.querySelectorAll('main section');
-    const navLinks = document.querySelectorAll('.menu-lateral a');
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <ul class="topicos">
+                <li>
+                    <strong>API de tarefas (FastAPI + PostgreSQL):</strong>
+                    API REST com operações de CRUD e integração com banco relacional,
+                    desenvolvida para estudo de backend e boas práticas.
+                </li>
+                <li>
+                    <strong>CRUD de tarefas em PHP + MySQL:</strong>
+                    Aplicação web simples para gerenciamento de tarefas, usando HTML,
+                    CSS, PHP e MySQL.
+                </li>
+                <li>
+                    <strong>Site pessoal (este portfólio):</strong>
+                    Projeto estático em HTML, CSS e JavaScript hospedado no GitHub
+                    Pages.
+                </li>
+                <li>
+                    <strong>Oficinas de Python:</strong>
+                    Aulas introdutórias de lógica de programação e Python para
+                    iniciantes.
+                </li>
+                <li>
+                    <strong>Curso de Git e GitHub:</strong>
+                    Treinamento básico de versionamento e fluxo de trabalho com Git
+                    para colegas da faculdade.
+                </li>
+                <li>
+                    <strong>Iniciação Científica – UTFPR:</strong>
+                    Pesquisa sobre uso de NLTK em Engenharia de Software, com foco em
+                    Processamento de Linguagem Natural.
+                </li>
+            </ul>
+        </section>
+    </main>
 
-    // Função para abrir/fechar menu mobile
-    btn.onclick = function () {
-        menu.classList.toggle('aberta');
-        document.body.classList.toggle('menu-aberto'); // Adiciona classe ao body
-    };
+    <!-- NAV BOTTOM -->
+    <nav class="bottom-nav">
+        <button class="nav-item ativo" data-target="sobre">
+            <i class="fa-solid fa-user"></i>
+            <span>Sobre</span>
+        </button>
+        <button class="nav-item" data-target="habilidades">
+            <i class="fa-solid fa-code"></i>
+            <span>Habilidades</span>
+        </button>
+        <button class="nav-item" data-target="interesses">
+            <i class="fa-solid fa-star"></i>
+            <span>Interesses</span>
+        </button>
+        <button class="nav-item" data-target="projetos">
+            <i class="fa-solid fa-folder-open"></i>
+            <span>Projetos</span>
+        </button>
+    </nav>
 
-    // Função para destacar o link ativo na navegação
-    window.addEventListener('scroll', () => {
-        let current = '';
+    <!-- Botão voltar ao topo -->
+    <button id="btn-topo" class="btn-topo" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        sections.forEach(section => {
-            // Calcula o ponto de rolagem para definir a seção ativa
-            const sectionTop = section.offsetTop - 100; // Offset de 100px para melhorar a detecção
-            if (scrollY >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('ativo');
-            if (link.href.includes(current)) {
-                link.classList.add('ativo');
-            }
-        });
-    });
-
-    // Garante que o primeiro link esteja ativo ao carregar a página
-    if (navLinks.length > 0) {
-        navLinks[0].classList.add('ativo');
-    }
-</script>
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>
