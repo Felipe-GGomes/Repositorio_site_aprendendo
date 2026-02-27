@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const foto = document.querySelector(".foto-quemsou");
-  const navItems = document.querySelectorAll(".bottom-nav .nav-item");
-  const sections = document.querySelectorAll("main section");
+  const navItems = document.querySelectorAll(".floating-nav .nav-item");
+  const sections = document.querySelectorAll("main section, footer.contato");
   const btnTopo = document.getElementById("btn-topo");
 
   // ======= CHUVA DE EMOJIS =======
@@ -14,26 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const span = document.createElement("span");
     span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
 
-    // posição horizontal aleatória
-    const left = Math.random() * 100; // de 0 a 100vw
+    const left = Math.random() * 100;
     span.style.left = `${left}vw`;
 
-    // duração e atraso aleatórios para não cair tudo igual
-    const duracao = 4 + Math.random() * 5; // entre 4s e 9s
-    const delay = Math.random() * 2;       // até 2s
+    const duracao = 4 + Math.random() * 5;
+    const delay = Math.random() * 2;
     span.style.animationDuration = `${duracao}s`;
     span.style.animationDelay = `${delay}s`;
 
     emojiContainer.appendChild(span);
 
-    // remove o elemento depois que a animação termina
     span.addEventListener("animationend", () => {
       span.remove();
     });
   }
 
-  // cria um emoji novo de tempos em tempos
-  setInterval(criarEmoji, 800);
+  // Para ativar a chuva, descomente:
+  // setInterval(criarEmoji, 800);
 
   if (foto) {
     foto.addEventListener("click", () => {
@@ -41,8 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Clique nos itens do menu
   navItems.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
       const targetId = item.getAttribute("data-target");
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
@@ -51,29 +50,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Destacar item da nav conforme o scroll
   window.addEventListener("scroll", () => {
     let currentId = "";
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 150;
       if (window.scrollY >= sectionTop) {
-        currentId = section.id;
+        currentId = section.getAttribute("id");
       }
     });
 
     navItems.forEach((item) => {
-      const targetId = item.getAttribute("data-target");
-      item.classList.toggle("ativo", targetId === currentId);
+      item.classList.remove("ativo");
+      if (item.getAttribute("data-target") === currentId) {
+        item.classList.add("ativo");
+      }
     });
 
-    if (window.scrollY > 250) {
-      btnTopo.classList.add("visivel");
-    } else {
-      btnTopo.classList.remove("visivel");
+    if (btnTopo) {
+      if (window.scrollY > 250) {
+        btnTopo.classList.add("visivel");
+      } else {
+        btnTopo.classList.remove("visivel");
+      }
     }
   });
 
-  btnTopo.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  if (btnTopo) {
+    btnTopo.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
